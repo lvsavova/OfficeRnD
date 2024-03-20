@@ -1,0 +1,22 @@
+{
+  "name": "chaimocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "tsc && mocha --require ts-node/register tests/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.13",
+    "@types/mocha": "^10.0.6",
+    "axios": "^1.6.8",
+    "chai": "^5.1.0",
+    "mocha": "^10.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}

@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Ignore JavaScript files
+tests/*.js
+
+# Output directory for compiled TypeScript files
+dist/
+
+# IntelliJ IDEA files
+.idea/
+
+ package-lock.json
+# Project exclude paths
+/models/*.js
+/service/*.js
