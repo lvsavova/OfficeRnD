@@ -27,4 +27,4 @@ Before running the tests, ensure you have the following installed:
 ## Usage
 
 To run the tests, execute the following command:
-` mocha test tests/create_membership.test.js`
+`npx mocha test tests/create_membership.test.js`
