@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "tsc && mocha --require ts-node/register tests/*.js"
+    "test": "mocha --require ts-node/register test tests/create_membership.test.js"
   },
   "keywords": [],
   "author": "",
