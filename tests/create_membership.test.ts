@@ -40,17 +40,16 @@ describe('Test', function () {
         membershipService = new MembershipService(baseURL, accessToken);
     });
 
-    it('Get planId', async function () {
+    it('Get plan', async function () {
         plan = await planService.getPlanByName(config.planName);
     });
 
-    it('Get office id and team id', async function () {
+    it('Get office and team for company', async function () {
         team = await teamService.getTeamByCompanyName(config.companyName);
     });
 
-    it('Create membership', async function () {
+    it('Create membership for team', async function () {
         await membershipService.createMembership(config.membershipName, team._id, config.startDate, team.office, plan._id, false)
-
     });
 });
 
