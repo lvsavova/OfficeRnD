@@ -7,13 +7,13 @@ import {TeamsService} from "../service/TeamsService.js";
 import {PlanService} from "../service/PlanService.js";
 import {AuthorizationService} from "../service/AuthorizationService.js";
 
-function readConfig(): Config {
+function readConfig() {
     const rawConfig = fs.readFileSync('tests/testConfig.json', 'utf-8');
-    return JSON.parse(rawConfig) as Config;
+    return JSON.parse(rawConfig);
 }
 
 let config = readConfig();
-;
+
 let baseURL;
 let accessToken;
 let plan: Plan;

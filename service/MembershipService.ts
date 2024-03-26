@@ -20,7 +20,7 @@ export class MembershipService {
             isPersonal: mIsPersonal
         };
 
-        const response = await axios.post<Membership>(`${this.url}`, requestBody, {
+        const response = await axios.post<Membership[]>(`${this.url}`, requestBody, {
             headers: {Authorization: `Bearer ${this.accessToken}`}
         });
 
